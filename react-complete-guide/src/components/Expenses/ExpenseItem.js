@@ -4,6 +4,7 @@ import Date from "./Date";
 import Card from "../UI/Card";
 
 const ExpenseItem = (props) => {
+  // react hook
   const [title, setTitle] = useState(props.title);
   const clickHandler = () => {
     debugger;
