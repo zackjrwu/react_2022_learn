@@ -32,16 +32,15 @@ const App = () => {
     React jsx 原理
     這就是為什麼一定要有第一個 div element (root)
     如果沒有就不知道要從哪裡開始 createElement()
+
+    實際上 jsx 做的事情
+   return React.createElement(
+     "div",
+     {},
+     React.createElement("h2", {}, "Let's get started!"),
+     React.createElement(Expenses, { expenses: expenses })
+   );
   */
-
-  //  實際上 jsx 做的事情
-  // return React.createElement(
-  //   "div",
-  //   {},
-  //   React.createElement("h2", {}, "Let's get started!"),
-  //   React.createElement(Expenses, { expenses: expenses })
-  // );
-
   return (
     <div>
       <NewExpense />
